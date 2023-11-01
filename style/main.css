@@ -37,25 +37,43 @@ body *::after {
 
 /* 메인 콘텐츠 */
 .main {
+  /* 자식 요소가 플로트 되었을 때 부모를 플로트로 지정하여 문제 해결 */
+  /* float: left; */
+  display: flow-root;
+  min-height: 450px;
+  padding: 40px 0;
+}
+
+/* 가상 요소를 이용한 float 이슈 해결 방법 */
+/* .main::after {
+  content: '';
+  clear: both;
+  display: block;
+  background: gray;
+} */
+
+.group {
+  float: left;
+  margin: 0 20px;
 }
 
 .group1 {
   width: 250px;
-  height: 100px;
-  float: left;
   background: rgba(0, 0, 255, 0.5);
 }
 
 .group2 {
-  width: 250px;
-  height: 200px;
+  width: 380px;
   background: green;
 }
 
 .group3 {
-  width: 250px;
-  height: 100px;
+  width: 190px;
 }
+
+/* .clearfix {
+  clear: both;
+} */
 
 /* 슬로건 */
 .slogan {
