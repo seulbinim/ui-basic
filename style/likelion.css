@@ -1,0 +1,21 @@
+/* 영역별 임시 코드 */
+.header {
+  background: yellow;
+  height: 15vh;
+}
+.visual {
+  background: pink;
+  height: 10vh;
+}
+.main {
+  background: aqua;
+  height: 50vh;
+}
+.slogan {
+  background: orange;
+  height: 10vh;
+}
+.footer {
+  background: lime;
+  height: 15vh;
+}
