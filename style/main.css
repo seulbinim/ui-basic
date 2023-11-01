@@ -39,12 +39,14 @@ body *::after {
 .main {
   /* 자식 요소가 플로트 되었을 때 부모를 플로트로 지정하여 문제 해결 */
   /* float: left; */
+  /* float 이슈를 해결하기 위한 최신 해결책 */
   display: flow-root;
   min-height: 450px;
   padding: 40px 0;
+  /* overflow: hidden; */
 }
 
-/* 가상 요소를 이용한 float 이슈 해결 방법 */
+/* 가상 요소를 이용한 float 이슈 해결책 */
 /* .main::after {
   content: '';
   clear: both;
@@ -53,29 +55,20 @@ body *::after {
 } */
 
 .group {
-  /* float: left; */
+  float: left;
   margin: 0 20px;
 }
 
 .group1 {
   width: 250px;
-  background: rgba(0, 0, 255, 0.5);
-  float: right;
 }
 
 .group2 {
   width: 380px;
-  background: green;
-  float: left;
-}
-
-.group-wrapper {
-  float: left;
 }
 
 .group3 {
   width: 190px;
-  float: right;
 }
 
 /* .clearfix {
