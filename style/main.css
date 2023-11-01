@@ -1,0 +1,37 @@
+:root {
+  --base-width: 940px;
+}
+
+/* 영역별 배경 */
+.header {
+  background: yellow;
+}
+.visual {
+  background: pink;
+}
+.main {
+  background: aqua;
+}
+.slogan {
+  background: orange;
+}
+.footer {
+  background: lime;
+}
+
+/* 레이아웃 */
+.header {
+  width: var(--base-width);
+}
+.visual {
+  width: var(--base-width);
+}
+.main {
+  width: var(--base-width);
+}
+.slogan {
+  width: var(--base-width);
+}
+.footer {
+  width: var(--base-width);
+}
