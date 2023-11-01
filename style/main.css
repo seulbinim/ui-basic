@@ -1,5 +1,19 @@
+/* 변수 */
 :root {
   --base-width: 940px;
+}
+
+/* 숨김 콘텐츠 */
+.a11y {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 /* 플렉스 컨테이너 */
@@ -29,6 +43,20 @@ body *::after {
 
 /* 헤더 */
 .header {
+}
+
+/* 로그 */
+.logo {
+  margin: 0;
+  line-height: 1;
+}
+
+.logo a {
+  background: purple;
+}
+
+.logo img {
+  vertical-align: top;
 }
 
 /* 비주얼 */
