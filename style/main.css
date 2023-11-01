@@ -2,6 +2,13 @@
   --base-width: 940px;
 }
 
+/* 플렉스 컨테이너 */
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
 /* 기본 스타일 */
 body,
 body *,
@@ -20,14 +27,39 @@ body *::after {
   margin: 0 auto;
 }
 
+/* 헤더 */
 .header {
 }
+
+/* 비주얼 */
 .visual {
 }
+
+/* 메인 콘텐츠 */
 .main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 40px 0;
 }
+
+.group1 {
+  width: 250px;
+}
+
+.group2 {
+  width: 380px;
+}
+
+.group3 {
+  width: 190px;
+}
+
+/* 슬로건 */
 .slogan {
 }
+
+/* 푸터 */
 .footer-bg {
   background: silver;
 }

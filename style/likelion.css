@@ -11,6 +11,17 @@
   background: aqua;
   height: 50vh;
 }
+
+.group1 {
+  background: blue;
+}
+.group2 {
+  background: tomato;
+}
+.group3 {
+  background: brown;
+}
+
 .slogan {
   background: orange;
   height: 10vh;
