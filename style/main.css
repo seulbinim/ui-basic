@@ -2,36 +2,35 @@
   --base-width: 940px;
 }
 
-/* 영역별 배경 */
-.header {
-  background: yellow;
-}
-.visual {
-  background: pink;
-}
-.main {
-  background: aqua;
-}
-.slogan {
-  background: orange;
-}
-.footer {
-  background: lime;
+/* 기본 스타일 */
+body,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
 }
 
 /* 레이아웃 */
-.header {
-  width: var(--base-width);
-}
-.visual {
-  width: var(--base-width);
-}
-.main {
-  width: var(--base-width);
-}
-.slogan {
-  width: var(--base-width);
-}
+.header,
+.visual,
+.main,
+.slogan,
 .footer {
   width: var(--base-width);
+  margin: 0 auto;
+}
+
+.header {
+}
+.visual {
+}
+.main {
+}
+.slogan {
+}
+.footer-bg {
+  background: silver;
+}
+
+.footer {
 }
