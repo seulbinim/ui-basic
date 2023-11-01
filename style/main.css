@@ -37,22 +37,24 @@ body *::after {
 
 /* 메인 콘텐츠 */
 .main {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  padding: 40px 0;
 }
 
 .group1 {
   width: 250px;
+  height: 100px;
+  float: left;
+  background: rgba(0, 0, 255, 0.5);
 }
 
 .group2 {
-  width: 380px;
+  width: 250px;
+  height: 200px;
+  background: green;
 }
 
 .group3 {
-  width: 190px;
+  width: 250px;
+  height: 100px;
 }
 
 /* 슬로건 */
