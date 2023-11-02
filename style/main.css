@@ -45,18 +45,21 @@ body *::after {
 .header {
 }
 
-/* 로그 */
+/* 로고 */
+.shadow {
+  background: black;
+}
 .logo {
-  margin: 0;
-  line-height: 1;
+  background: purple;
+  position: relative;
+  top: -5px;
+  left: -5px;
 }
 
 .logo a {
-  background: purple;
 }
 
 .logo img {
-  vertical-align: top;
 }
 
 /* 비주얼 */
