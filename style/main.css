@@ -147,15 +147,22 @@ a{
 .sub-menu{
   position: absolute;
   top: 50px;
-  left: 0;
-  display: none;
   white-space: nowrap;
   padding: 4px 0;
   color: #000;
+  display: none;
 }
 
-.menu-item:first-child .sub-menu{
+.is-active .sub-menu{
   display: block;
+}
+
+.menu-html, .menu-css, .menu-standards {
+  left: 0;
+}
+
+.menu-accessibility, .menu-qna, .menu-archive{
+  right: 0;
 }
 
 
