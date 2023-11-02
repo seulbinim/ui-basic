@@ -86,8 +86,8 @@ a{
 
 /* 안내 링크 */
 .member-service {
-  font-size: 0;
   text-align: right;
+  text-transform: uppercase;
 }
 
 .member-service li {
@@ -95,8 +95,20 @@ a{
   background: orange;
 }
 
+/* .member-service li::before{
+  content: ":";
+}
+
+.member-service li:first-child::before{
+  content: "";
+} */
+
+.member-service li:nth-child(n+2)::before{
+  content: ":";
+}
+
 .member-service a{
-  font-size: 16px;
+
 }
 /* 비주얼 */
 .visual {
