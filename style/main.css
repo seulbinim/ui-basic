@@ -110,7 +110,12 @@ a{
 
 /* 메인 메뉴 */
 .navigation{
+  background: yellow;
+}
 
+.menu{
+  /* background: aqua url("./../images/ani_flower_03.png") no-repeat 0 0 / 200px 250px; */
+  background: linear-gradient(red, green);
 }
 
 /* 비주얼 */
