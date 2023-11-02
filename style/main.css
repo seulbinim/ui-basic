@@ -69,12 +69,17 @@ body *::after {
 }
 
 /* 안내 링크 */
+.member-wrapper {
+  display: flow-root;
+}
 .member-service {
   background: lime;
-  display: flex;
-  flex-flow: row-reverse nowrap;
+  float: right;
 }
 
+.member-service li {
+  float: left;
+}
 /* 비주얼 */
 .visual {
 }
