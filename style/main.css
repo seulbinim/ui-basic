@@ -115,7 +115,7 @@ a{
 
 /* 메인 메뉴 */
 .navigation{
-  /* background: yellow; */
+  padding-bottom: 40px;
 }
 
 .menu{
@@ -149,8 +149,9 @@ a{
   top: 50px;
   left: 0;
   display: none;
-  background:blue;
   white-space: nowrap;
+  padding: 4px 0;
+  color: #000;
 }
 
 .menu-item:first-child .sub-menu{
@@ -158,9 +159,18 @@ a{
 }
 
 
-.sub-menu li{
+.sub-menu li, .sub-menu a{
   display: inline-block;
 }
+
+.sub-menu a{
+  padding: 6px var(--anchor-space);
+}
+
+.sub-menu a:hover, .sub-menu a:focus{
+  color: var(--accent-color);
+}
+
 
 .sub-menu a::before{
   content: '\f192';
