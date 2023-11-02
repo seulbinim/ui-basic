@@ -16,6 +16,14 @@
   border-width: 0;
 }
 
+/* 공통 스타일 - Reset */
+.reset-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /* 플렉스 컨테이너 */
 /* .flex-container {
   display: flex;
@@ -47,7 +55,6 @@ body *::after {
 }
 
 /* 로고 */
-
 .logo {
   position: absolute;
   top: 45px;
@@ -59,6 +66,13 @@ body *::after {
 .logo a,
 .logo img {
   display: block;
+}
+
+/* 안내 링크 */
+.member-service {
+  background: lime;
+  display: flex;
+  flex-flow: row-reverse nowrap;
 }
 
 /* 비주얼 */
