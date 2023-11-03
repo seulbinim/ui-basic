@@ -155,7 +155,41 @@
       <div class="visual-text">Web Standards &amp; Accessibility</div>
     </div>
     <main class="main">
-      <div class="group group1">그룹1</div>
+      <div class="group group1">
+        <section class="login">
+          <h2 class="login-title">로그인</h2>
+          <form action="/" class="login-form" method="get">
+            <fieldset>
+              <legend>회원 로그인 폼</legend>
+              <div class="user-email">
+                <label for="userEmail">아이디</label>
+                <input
+                  type="email"
+                  id="userEmail"
+                  placeholder="fe@euid.dev"
+                  required
+                  name="userEmail"
+                />
+              </div>
+              <div class="user-password">
+                <label for="userPwd">비밀번호</label>
+                <input
+                  type="password"
+                  id="userPwd"
+                  placeholder="8자리 이상"
+                  required
+                  name="userPwd"
+                />
+              </div>
+              <button class="login-button">로그인</button>
+            </fieldset>
+          </form>
+          <ul class="member">
+            <li><a href="/">회원가입</a></li>
+            <li><a href="/">아이디/비밀번호 찾기</a></li>
+          </ul>
+        </section>
+      </div>
       <div class="group group2">그룹2</div>
       <div class="group group3">그룹3</div>
     </main>
