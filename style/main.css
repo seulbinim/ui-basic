@@ -320,6 +320,13 @@ a {
   /* background: pink; */
 }
 
+/* 시스템 설정 -손쉬운 사용 - 디스플레이 - 동작줄이기 선택했을 경우  */
+@media (prefers-reduced-motion: reduce) {
+  .visual::before,
+  .visual::after {
+    animation: none;
+  }
+}
 /* 메인 콘텐츠 */
 .main {
   /* 자식 요소가 플로트 되었을 때 부모를 플로트로 지정하여 문제 해결 */
