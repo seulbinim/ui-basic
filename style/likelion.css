@@ -7,11 +7,11 @@
   height: 10vh;
 } */
 .main {
-  /* background: aqua; */
-  height: 250vh;
+  background: aqua;
+  height: 50vh;
 }
 
-/* .group1 {
+.group1 {
   background: blue;
 }
 .group2 {
@@ -28,4 +28,4 @@
 .footer {
   background: lime;
   height: 15vh;
-} */
+}
