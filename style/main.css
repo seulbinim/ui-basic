@@ -405,12 +405,52 @@ a {
 .login-form fieldset {
   border-bottom: 1px solid #aaa;
   padding-bottom: 10px;
+  position: relative;
+}
+
+.login-form [for] {
+  width: 50px;
+  display: inline-block;
+}
+
+.login-form [name*='user'] {
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  width: 90px;
+  padding-left: 5px;
+}
+
+.user-pwd {
+  margin-top: 5px;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 45px;
+  padding: 0;
+  font: inherit;
+  font-size: 1.3rem;
+  background: var(--accent-color);
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
 }
 
 .member {
   background: #fff;
   border-radius: 0 0 5px 5px;
   padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: -1px;
+}
+
+.member .icon-right-open::before {
+  color: var(--accent-color);
+  margin: 0;
 }
 
 /* 슬로건 */
