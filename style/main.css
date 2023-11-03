@@ -5,10 +5,12 @@
   --base-width: 940px;
   --anchor-space: 10px;
   --accent-color: #ed602d;
+  --point-color: #f4a52e;
 }
 
 /* 숨김 콘텐츠 */
-.sr-only {
+.sr-only,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -27,6 +29,12 @@
   margin-bottom: 0;
   list-style-type: none;
   padding-left: 0;
+}
+
+.reset-box {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* 플렉스 컨테이너 */
@@ -367,6 +375,26 @@ a {
   clear: both;
 } */
 
+/* 로그인 */
+.login {
+  background: var(--accent-color)
+    radial-gradient(
+      circle at right top,
+      var(--point-color),
+      var(--accent-color)
+    );
+  padding: 15px;
+  box-shadow: 5px 5px 0 0 #aaa;
+  border-radius: 5px;
+}
+
+.login-title {
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+  margin: 0 0 10px;
+}
 /* 슬로건 */
 .slogan {
 }
