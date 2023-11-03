@@ -395,6 +395,24 @@ a {
   text-indent: 10px;
   margin: 0 0 10px;
 }
+
+.login-form {
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+}
+
+.member {
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 10px 10px 10px 10px;
+}
+
 /* 슬로건 */
 .slogan {
 }
