@@ -54,10 +54,17 @@ body {
     BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-  background-color: #ccc;
   color: #121212;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #ccc; */
+  /* background-image: url(./../images/bg_flower.png),
+    linear-gradient(180deg, #ccc 0%, #eee 30%, #fff 60%, #fff 100%); */
+  /* background-repeat: no-repeat; */
+  /* background-position: 50% 0; */
+  /* background-attachment: scroll; */
+  background: url(./../images/bg_flower.png) no-repeat 50% 0 scroll,
+    linear-gradient(180deg, #ccc 0%, #eee 30%, #fff 60%, #fff 100%), #ccc;
 }
 
 a {
@@ -252,12 +259,12 @@ a {
   0% {
     font-size: 12px;
     color: rgba(0, 0, 0, 0);
-    transform: translate(0, 0);
+    /* transform: translate(0, 0); */
   }
   100% {
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
-    transform: translate(400px, 75px);
+    /* transform: translate(400px, 75px); */
   }
 }
 
@@ -267,7 +274,7 @@ a {
 }
 
 .visual-text {
-  position: absolute;
+  /* position: absolute; */
   animation-name: moveEffect;
   animation-duration: 2s;
   animation-fill-mode: forwards;
