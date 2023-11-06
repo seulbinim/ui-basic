@@ -466,7 +466,6 @@ a {
   border-radius: 30px;
   display: block;
   margin-top: 10px;
-  margin-bottom: 10px;
   height: 30px;
   line-height: 30px;
   text-indent: 45px;
@@ -481,6 +480,53 @@ a {
 .validation-link:hover,
 .validation-link:focus {
   color: #f00;
+}
+
+/* 웸 관련 용어 */
+.gradient-box {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #ccc, #eee);
+}
+
+.term {
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.term-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-card {
+  background-color: yellow;
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-card-subject {
+  background-color: pink;
+  font-style: normal;
+}
+
+.term-card-thumbnail {
+  background-color: #f4a52e;
+  margin: 0;
+  float: left;
+  margin-right: 10px;
+}
+
+.term-card-description {
+  background-color: chartreuse;
+  margin: 0;
+}
+
+.card-reverse .term-card-thumbnail {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
 }
 
 /* 슬로건 */
