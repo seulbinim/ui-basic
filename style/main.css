@@ -340,6 +340,8 @@ a {
   /* 자식 요소가 플로트 되었을 때 부모를 플로트로 지정하여 문제 해결 */
   /* float: left; */
   /* float 이슈를 해결하기 위한 최신 해결책 */
+  background: #fff;
+  border-radius: 15px 15px 0 0;
   display: flow-root;
   min-height: 450px;
   padding: 40px 0;
@@ -451,6 +453,30 @@ a {
 .member .icon-right-open::before {
   color: var(--accent-color);
   margin: 0;
+}
+
+/* 유효성검사 링크 모음 */
+.validation {
+  margin-top: 25px;
+  /* display: flex;
+  flex-flow: column nowrap; */
+}
+
+.validation-link {
+  background: #ccc url(./../images/validation_icon.png) no-repeat 20px 50%;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 45px;
+}
+
+.validation-link:hover,
+.validation-link:focus {
+  color: #f00;
 }
 
 /* 슬로건 */
