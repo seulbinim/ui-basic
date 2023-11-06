@@ -512,6 +512,8 @@ a {
   font-style: normal;
   color: #296897;
   font-weight: 500;
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: self-start;
 }
 
 .term-card-thumbnail {
@@ -527,6 +529,8 @@ a {
 
 .term-card-description {
   margin: 0;
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: self-end;
 }
 
 /* 슬로건 */
