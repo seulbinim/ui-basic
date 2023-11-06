@@ -458,22 +458,20 @@ a {
 /* 유효성검사 링크 모음 */
 .validation {
   margin-top: 25px;
-  display: flex;
-  flex-flow: row wrap;
 }
 
-.validation-link {
+.validation li {
   background: #ccc url(./../images/validation_icon.png) no-repeat 20px 50%;
   border: 1px solid #aaa;
   border-radius: 30px;
-  /* display: block; */
+  display: block;
   margin-top: 10px;
   margin-bottom: 10px;
   height: 30px;
   line-height: 30px;
   text-indent: 45px;
-  width: 50%;
   overflow: hidden;
+  width: 100%;
 }
 
 .validation-link:nth-child(5) {
