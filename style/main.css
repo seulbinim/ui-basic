@@ -514,8 +514,11 @@ a {
 .term-card-thumbnail {
   background-color: #f4a52e;
   margin: 0;
-  float: left;
-  margin-right: 10px;
+}
+
+.term-card-thumbnail img {
+  /* vertical-align: top; */
+  /* display: block; */
 }
 
 .term-card-description {
@@ -523,10 +526,14 @@ a {
   margin: 0;
 }
 
-.card-reverse .term-card-thumbnail {
+.card-odd .term-card-thumbnail {
+  float: left;
+  margin-right: 10px;
+}
+
+.card-even .term-card-thumbnail {
   float: right;
   margin-left: 10px;
-  margin-right: 0;
 }
 
 /* 슬로건 */
