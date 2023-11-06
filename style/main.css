@@ -501,39 +501,32 @@ a {
 }
 
 .term-card {
-  background-color: yellow;
   margin-top: 10px;
-  display: flow-root;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  /* grid-template-rows: auto; */
+  grid-auto-rows: auto;
 }
 
 .term-card-subject {
-  background-color: pink;
   font-style: normal;
+  color: #296897;
+  font-weight: 500;
 }
 
 .term-card-thumbnail {
-  background-color: #f4a52e;
   margin: 0;
+  /* grid-column: 1 / 2;
+  grid-row: 1 / 3; */
+  grid-area: 1/ 1/ 3/ 2;
 }
-
 .term-card-thumbnail img {
-  /* vertical-align: top; */
+  vertical-align: top;
   /* display: block; */
 }
 
 .term-card-description {
-  background-color: chartreuse;
   margin: 0;
-}
-
-.card-odd .term-card-thumbnail {
-  float: left;
-  margin-right: 10px;
-}
-
-.card-even .term-card-thumbnail {
-  float: right;
-  margin-left: 10px;
 }
 
 /* 슬로건 */
