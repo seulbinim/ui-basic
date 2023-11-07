@@ -568,8 +568,39 @@ a {
 .board {
   background: yellow;
   margin-top: 20px;
+  position: relative;
 }
 
+.tab-area {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.tab-panel a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tab-panel.is-active {
+  display: block;
+}
+
+.board-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /* 슬로건 */
 .slogan {
 }
