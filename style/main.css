@@ -564,6 +564,12 @@ a {
   font-size: 13px;
 }
 
+/* 공지사항 및 자료실 */
+.board {
+  background: yellow;
+  margin-top: 20px;
+}
+
 /* 슬로건 */
 .slogan {
 }
