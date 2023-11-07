@@ -654,29 +654,3 @@ a {
 
 .footer {
 }
-
-/* 플렉스 실습 */
-.news {
-  width: 502px;
-  margin-top: 20px;
-  border: 1px solid blue;
-  display: flex;
-}
-
-.news div {
-  flex-basis: 150px;
-}
-
-.box1 {
-  background-color: yellow;
-}
-.box2 {
-  background-color: pink;
-  flex-shrink: 2;
-}
-.box3 {
-  background-color: aqua;
-}
-.box4 {
-  background-color: lime;
-}
