@@ -566,7 +566,6 @@ a {
 
 /* 공지사항 및 자료실 */
 .board {
-  background: yellow;
   margin-top: 20px;
   position: relative;
 }
@@ -576,8 +575,29 @@ a {
   flex-flow: row nowrap;
 }
 
+.tab {
+  background: #ccc;
+  color: #999;
+  border: 1px solid #777;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+}
+
+.tab.is-active {
+  background: #fff;
+  color: var(--accent-color);
+  border-color: currentColor currentColor #fff currentColor;
+}
+
 .tab-panel {
   display: none;
+}
+
+.tab-panel ul {
+  margin-top: 35px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 8px;
 }
 
 .tab-panel li {
@@ -598,9 +618,19 @@ a {
 
 .board-more {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -8px;
+  right: -8px;
 }
+
+.more {
+  display: inline-block;
+  padding: 8px;
+}
+
+.more::before {
+  color: hsla(20, 70%, 30%, 1);
+}
+
 /* 슬로건 */
 .slogan {
 }
