@@ -709,3 +709,18 @@ a {
 
 .footer {
 }
+
+/* CSS 스프라이트 */
+.event-button {
+  width: 19px;
+  height: 18px;
+  background-color: transparent;
+  background-image: url(./../images/back_forward.png);
+  background-repeat: no-repeat;
+  border: 0;
+  padding: 0;
+}
+
+.event-button-next {
+  background-position: -36px 0;
+}
