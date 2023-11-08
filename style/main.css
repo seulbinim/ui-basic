@@ -824,6 +824,7 @@ em {
 /* 인기 사이트 */
 
 .favorite {
+  position: relative;
   margin-block-start: 20px;
   padding: 10px;
 
@@ -841,6 +842,10 @@ em {
 
 .favorite-list li {
   counter-increment: number;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 8px;
 }
 
 .favorite-list li::before {
@@ -853,6 +858,33 @@ em {
   width: 1.5em;
   text-align: center;
   border-radius: 3px;
+}
+.favorite-list a {
+  flex-grow: 1;
+}
+
+.favorite-more {
+  position: absolute;
+  top: 8px;
+  right: 2px;
+}
+
+.up,
+.stop,
+.down {
+  /* display: inline-block; */
+  width: 9px;
+  height: 11px;
+  background-image: url(./../images/rank.png);
+  background-repeat: no-repeat;
+}
+
+.stop {
+  background-position: 0 50%;
+}
+
+.down {
+  background-position: 0 100%;
 }
 
 /* 슬로건 */
