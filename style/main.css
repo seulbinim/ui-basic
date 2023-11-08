@@ -710,10 +710,11 @@ em {
 .point-color {
   color: var(--accent-color);
 }
+.event-related {
+  padding: 10px;
+}
 
 .event {
-  background-color: pink;
-
   & h2 {
     margin: 0;
   }
@@ -723,16 +724,18 @@ em {
   }
 }
 
-.event-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
+.event {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto;
+  row-gap: 10px;
 }
 
 .event-button-wrapper {
-  background-color: yellow;
   display: flex;
   flex-flow: row nowrap;
   margin-inline-start: auto;
+  align-items: center;
 }
 
 .event-button {
@@ -747,6 +750,20 @@ em {
 
 .event-button-next {
   background-position: -36px 0;
+}
+
+.event-card {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 10px;
+}
+
+.event-card img {
+  align-self: center;
+  filter: drop-shadow(5px 5px #aaa);
+  /* box-shadow: 5px 5px 0px 0px blue; */
 }
 
 /* 슬로건 */
