@@ -80,6 +80,10 @@ a {
   text-decoration: none;
 }
 
+em {
+  font-style: normal;
+}
+
 /*  스킵 내비게이션 */
 .skip-nav {
   position: relative;
@@ -570,7 +574,7 @@ a {
   position: relative;
 }
 
-.divider {
+.board .divider {
   position: absolute;
   top: 45px;
   left: 0;
@@ -698,19 +702,13 @@ a {
   justify-self: end;
 }
 
-/* 슬로건 */
-.slogan {
+/* 신규이벤트 및 관련사이트 */
+.event-button-wrapper {
+  background-color: yellow;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-/* 푸터 */
-.footer-bg {
-  background: silver;
-}
-
-.footer {
-}
-
-/* CSS 스프라이트 */
 .event-button {
   width: 19px;
   height: 18px;
@@ -723,4 +721,16 @@ a {
 
 .event-button-next {
   background-position: -36px 0;
+}
+
+/* 슬로건 */
+.slogan {
+}
+
+/* 푸터 */
+.footer-bg {
+  background: silver;
+}
+
+.footer {
 }
