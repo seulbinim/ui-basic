@@ -710,8 +710,20 @@ em {
 .point-color {
   color: var(--accent-color);
 }
+
+.line {
+  border: 1px solid #aaa;
+}
+
 .event-related {
   padding: 10px;
+
+  & .line {
+    margin: 10px 0 6px;
+    width: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+  }
 }
 
 .event {
@@ -757,13 +769,25 @@ em {
   grid-row: 2 / 3;
   display: flex;
   flex-flow: column nowrap;
-  row-gap: 10px;
+  row-gap: 15px;
+  line-height: 1.5;
 }
 
 .event-card img {
   align-self: center;
   filter: drop-shadow(5px 5px #aaa);
   /* box-shadow: 5px 5px 0px 0px blue; */
+}
+
+.related {
+  & h2 {
+    margin: 0;
+  }
+}
+
+.related-list {
+  background-color: #fff;
+  margin-block-start: 10px;
 }
 
 /* 슬로건 */
