@@ -834,7 +834,27 @@ em {
 
 .favorite-list {
   margin-block-start: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 8px;
 }
+
+.favorite-list li {
+  counter-increment: number;
+}
+
+.favorite-list li::before {
+  content: counter(number);
+  color: #fff;
+  background: #aaa;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 2px 5px;
+  width: 1.5em;
+  text-align: center;
+  border-radius: 3px;
+}
+
 /* 슬로건 */
 .slogan {
 }
