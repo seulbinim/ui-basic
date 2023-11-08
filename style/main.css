@@ -703,10 +703,36 @@ em {
 }
 
 /* 신규이벤트 및 관련사이트 */
+.bold-large {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.point-color {
+  color: var(--accent-color);
+}
+
+.event {
+  background-color: pink;
+
+  & h2 {
+    margin: 0;
+  }
+
+  & p {
+    margin: 0;
+  }
+}
+
+.event-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .event-button-wrapper {
   background-color: yellow;
   display: flex;
   flex-flow: row nowrap;
+  margin-inline-start: auto;
 }
 
 .event-button {
