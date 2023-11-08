@@ -792,14 +792,14 @@ em {
   border-radius: 5px;
   height: 27px;
   overflow: hidden;
-  transition: height 400ms, padding-block-start 200ms 400ms;
+  transition: height 400ms, padding-block-start 200ms 400ms, ba;
   /* transition-property: height, padding-block-start;
   transition-duration: 400ms, 200ms;
   transition-delay: 0ms, 400ms;
   transition-timing-function: ease-in-out; */
 }
 
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion: reduce) {
   .related-list {
     transition: none;
   }
@@ -821,6 +821,20 @@ em {
   text-indent: 20px;
 }
 
+/* 인기 사이트 */
+
+.favorite {
+  margin-block-start: 20px;
+  padding: 10px;
+
+  & h2 {
+    margin: 0;
+  }
+}
+
+.favorite-list {
+  margin-block-start: 10px;
+}
 /* 슬로건 */
 .slogan {
 }
