@@ -788,6 +788,37 @@ em {
 .related-list {
   background-color: #fff;
   margin-block-start: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 400ms, padding-block-start 200ms 400ms;
+  /* transition-property: height, padding-block-start;
+  transition-duration: 400ms, 200ms;
+  transition-delay: 0ms, 400ms;
+  transition-timing-function: ease-in-out; */
+}
+
+@media (prefers-reduced-motion) {
+  .related-list {
+    transition: none;
+  }
+}
+
+.related-list:hover {
+  padding-block-start: 10px;
+  height: 147px;
+}
+
+.related-list li {
+  height: 25px;
+  padding: 2px;
+}
+
+.related-list a {
+  display: block;
+  line-height: 20px;
+  text-indent: 20px;
 }
 
 /* 슬로건 */
